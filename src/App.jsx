@@ -1,4 +1,4 @@
-import Typrogaphy from "./components/Typrogaphy"
+import {Typrogaphy, MuiTypogaphy} from './components'
 
 const App = () => {
 
@@ -6,6 +6,7 @@ const App = () => {
   return (
     <>
     <Typrogaphy />
+    <MuiTypogaphy />
     </>
   )
 }
