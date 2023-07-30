@@ -5,7 +5,7 @@ import SendIcon from '@mui/icons-material/Send';
 const MuiTypogaphy = () => {
 
     return (
-        <Stack spacing={4}>
+        <Stack spacing={4} marginBottom={2}>
         <Stack spacing={2} direction='row'>
         <Button variant="text">Text</Button>
         <Button variant="contained">Conteined</Button>
@@ -28,6 +28,7 @@ const MuiTypogaphy = () => {
         <Stack display='block' spacing={3} direction='row'>
             <Button variant="contained" startIcon={<SendIcon />}>Send</Button>
             <Button variant="contained" endIcon={<SendIcon />} color="error">Send</Button>
+            <Button variant="contained" startIcon={<SendIcon />}>Mail</Button>
         </Stack>
         </Stack>
     )

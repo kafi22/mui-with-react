@@ -5,7 +5,7 @@ const Typrogaphy = () => {
 
     return (
         <div>
-        <Typography variant='h1'>h1 heading</Typography>
+        <Typography variant='h1' color='primary'>h1 heading</Typography>
         <Typography variant='h2'>h2 heading</Typography>
         <Typography variant='h3'>h3 heading</Typography>
         <Typography variant='h4'>h4 heading</Typography>

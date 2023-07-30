@@ -1,4 +1,4 @@
-import {Typrogaphy, MuiTypogaphy} from './components'
+import {Typrogaphy, MuiTypogaphy, Textfield, Muiselect} from './components'
 
 const App = () => {
 
@@ -7,6 +7,8 @@ const App = () => {
     <>
     <Typrogaphy />
     <MuiTypogaphy />
+    <Textfield />
+    <Muiselect/>
     </>
   )
 }
