@@ -1,4 +1,5 @@
-import {Typrogaphy, MuiTypogaphy, Textfield, Muiselect} from './components'
+import {Typrogaphy, MuiTypogaphy, Textfield, Muiselect, MuiRadio, Muicheckedbox, MuiSwitch, MuiRating, MuiAutocomplete} from './components'
+
 
 const App = () => {
 
@@ -9,6 +10,11 @@ const App = () => {
     <MuiTypogaphy />
     <Textfield />
     <Muiselect/>
+    <MuiRadio />
+    <Muicheckedbox/>
+    <MuiSwitch />
+    <MuiRating />
+    <MuiAutocomplete/>
     </>
   )
 }
