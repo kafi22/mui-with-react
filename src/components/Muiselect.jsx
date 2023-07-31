@@ -3,7 +3,7 @@ import { useState } from "react"
 
 const Muiselect = () => {
 
-    const [value, setValue] = useState([])
+    const [value, setValue] = useState('')
 
 
     console.log(value);
@@ -15,9 +15,14 @@ const Muiselect = () => {
         fullWidth select
          value={value}
           onChange={e => setValue(e.target.value)}
-          SelectProps={{
-            multiple : true
-          }}
+          // when we use multiple value 
+          // SelectProps={{
+          //   multiple : true
+          // }}
+          helperText={!value && "please select your country" }
+          error={!value}
+          size="small"
+          color="info"
           >
             <MenuItem value='India'>India</MenuItem>
             <MenuItem value='Bangladesh'>Bangladesh</MenuItem>
