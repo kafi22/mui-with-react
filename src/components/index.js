@@ -7,6 +7,7 @@ export {default as Muicheckedbox} from "./Muicheckedbox.jsx";
 export {default as MuiSwitch} from "./MuiSwitch.jsx";
 export {default as MuiRating} from "./MuiRating.jsx";
 export {default as MuiAutocomplete} from "./MuiAutocomplete.jsx"
+export {default as MuiBox} from "./MuiBox.jsx"
 
 
 
