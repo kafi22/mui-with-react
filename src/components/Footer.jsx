@@ -1,8 +1,9 @@
 import React from 'react'
+import Wrapper from '../Wrappers/Wrapper'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <Wrapper>Footer</Wrapper>
   )
 }
 
