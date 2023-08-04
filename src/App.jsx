@@ -10,6 +10,7 @@ const App = () => {
     {
       path : '/',
       element : <Layoutpage />,
+      errorElement : <Errorpage />,
 
       children : [
 
@@ -20,14 +21,57 @@ const App = () => {
         },
 
         {
+          path : 'technology',
+          element : <Technology />
+        },
+
+        {
           path : 'design',
           element : <Design />
         },
 
         {
+          path : 'culture',
+          element : <Culture />
+        },
+
+        {
+
           path : 'business',
           element : <Business />
+        },
+
+
+        {
+          path : 'politics',
+          element : <Politics />
+        },
+
+        {
+          path : 'opinion',
+          element : <Opinion />
+        },
+
+        {
+          path : 'science',
+          element : <Science />
+        },
+
+        {
+          path : 'health',
+          element : <Health />
+        },
+
+        {
+          path : 'style',
+          element : <Styles />
+        },
+
+        {
+          path : 'travel',
+          element : <Travel />
         }
+
 
       ]
     }

@@ -1,8 +1,16 @@
+import { Typography } from '@mui/material'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Culture = () => {
   return (
-    <div>Culture</div>
+    <div>
+      <Typography>
+        this is Culture page
+      </Typography>
+
+      <Link to={'/'}>Back to home</Link>
+    </div>
   )
 }
 
