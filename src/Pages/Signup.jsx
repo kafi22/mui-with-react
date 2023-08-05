@@ -1,10 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom';
+
+import Sign_up from '../components/Sign_up';
 
 const Signup = () => {
   return (
     <div>
-        <Signup />
+        <Sign_up />
+        <Outlet />
 
         <Link to={'/'}>
         back to home
