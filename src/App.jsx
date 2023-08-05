@@ -2,6 +2,8 @@ import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import {Home, Business, Culture, Design, Errorpage, Health, Layoutpage, Opinion, Politics, Science, Styles, Technology, Travel } from '../src/Pages'
+import Signup from "./Pages/Signup";
+import Signin from "./Pages/Signin";
 
 const App = () => {
 
@@ -70,7 +72,19 @@ const App = () => {
         {
           path : 'travel',
           element : <Travel />
+        },
+
+        {
+
+          path : 'signup',
+          element : <Signup />
+        },
+
+        {
+          path : 'signin',
+          element : <Signin />
         }
+
 
 
       ]
