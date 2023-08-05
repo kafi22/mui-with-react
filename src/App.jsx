@@ -74,21 +74,42 @@ const App = () => {
           element : <Travel />
         },
 
-        {
+        // {
 
-          path : 'signup',
-          element : <Signup />
-        },
+        //   path : 'signup',
+        //   element : <Signup />
+        // },
+
+        // {
+        //   path : 'signin',
+        //   element : <Signin />
+        // }
+
+
+
+      ],
+    },
+
+    {
+
+      path : 'signup',
+      element : <Signup />,
+      errorElement : <Errorpage />,
+
+      children : [
 
         {
           path : 'signin',
-          element : <Signin />
+          element : <Signin />,
+         
         }
 
 
-
       ]
-    }
+      
+    },
+
+   
   ])
 
   return (
