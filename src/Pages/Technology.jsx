@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Button } from '@mui/material';
-import { DropzoneArea } from 'react-dropzone-uploader';
+import { Box, Button, Stack } from '@mui/material';
+import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
 const Technology = () => {
   const [uploadedFile, setUploadedFile] = useState(null);
@@ -11,18 +11,20 @@ const Technology = () => {
     }
   };
 
-  const handleSubmit = (files, allFiles) => {
-    allFiles.forEach((f) => f.remove());
-  };
+  const getTheUploadButton = () => {
 
-  const handleButtonClick = () => {
-    document.getElementById('fileInput').click();
-  };
+    document.getElementById("fileInput").click()
+
+  }
 
   return (
-    <div>
-      <Button variant="contained" onClick={handleButtonClick}>
-        Upload Image or File
+    <Stack>
+
+    <Box sx={{display : "flex", justifyContent : "flex-start", alignItems : "flex-start", flexDirection : "column", gap : "2rem"}} >
+      <Box sx={{display : "flex", justifyContent : "flex-start", alignItems : "center", gap : "2rem", width : "100%"}}>
+        
+      <Button variant="contained" onClick={getTheUploadButton} endIcon={<CloudUploadIcon />}>
+        Upload here
       </Button>
       <input
         id="fileInput"
@@ -31,23 +33,34 @@ const Technology = () => {
         onChange={(e) => handleChangeStatus({ file: e.target.files[0] }, 'done')}
         accept="image/*, .pdf, .doc, .docx"
       />
+      </Box>
       {uploadedFile && (
-        <div>
+        <Box >
           {uploadedFile.type.includes('image') ? (
-            <div>
-              <p>Uploaded Image:</p>
+            <Box sx={{display : "flex", justifyContent : "flex-start", flexDirection : "column"}}>
+              
+              <div>
               <img
                 src={URL.createObjectURL(uploadedFile)}
                 alt="Uploaded"
-                style={{ maxWidth: '100%', height: 'auto' }}
+                style={{ maxWidth: '100%', height: '200px', width : "200px", borderRadius : "10px" }}
               />
-            </div>
+              </div>
+              <Box sx={{display : "flex", flexDirection : "column"}}>
+              <p>Uploaded Image: {uploadedFile.name}</p>
+              </Box>
+               
+            </Box>
           ) : (
-            <p>Uploaded File: {uploadedFile.name}</p>
+            <Box sx={{display : "flex", flexDirection : "column"}}>
+              <p>Uploaded File: {uploadedFile.name}</p>
+            </Box>
           )}
-        </div>
+        </Box>
       )}
-    </div>
+      
+    </Box>
+    </Stack>
   );
 };
 
