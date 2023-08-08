@@ -83,7 +83,7 @@ const Sign_in = () => {
 
                     <Box sx={{display : "flex", justifyContent : "center", alignItems : "center", flexDirection : "row"}}>
                         <Typography textAlign={"center"} variant='body2'>
-                            &copy; by kafi ahmed 2023
+                        Copyright © by kafi 2023.
                         </Typography>
                     </Box>
 
