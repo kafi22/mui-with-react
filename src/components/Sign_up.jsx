@@ -53,7 +53,7 @@ const Sign_up = () => {
 
             <FormControl>
                 <Typography variant='body2' color={'primary'}>
-                    <Link to={'signin'}>
+                    <Link to={'/signin'}>
                     Already have an account? sign in
                     </Link>
                 </Typography>
