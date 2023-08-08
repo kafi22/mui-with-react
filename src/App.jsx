@@ -96,18 +96,14 @@ const App = () => {
       element : <Signup />,
       errorElement : <Errorpage />,
 
-      children : [
-
-        {
-          path : 'signin',
-          element : <Signin />,
-         
-        }
-
-
-      ]
-      
     },
+
+    {
+      path : 'signin',
+      element : <Signin />,
+      errorElement : <Errorpage />,
+     
+    }
 
    
   ])
