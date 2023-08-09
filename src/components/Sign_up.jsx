@@ -11,7 +11,7 @@ const Sign_up = () => {
     <Stack>
     <Box sx={{display : 'flex', justifyContent : 'center', alignItems : 'center', height : '100vh'}}>
 
-    <Box sx={{maxWidth : '400px', backgroundColor : 'transparent', display : "flex", justifyContent : "center", alignItems : "center", flexDirection : "column", gap : "1rem", padding : "1rem", mt : "2rem"}}>
+    <Box sx={{maxWidth : '400px', backgroundColor : 'transparent', display : "flex", justifyContent : "center", alignItems : "center", flexDirection : "column", gap : "1rem", padding : "1rem", mt : "1rem"}}>
 
 
         <Box component={'div'} sx={{display : "flex", flexDirection : "column", justifyContent : "center", alignItems : "center", m : "1rem 0", gap : '.7rem'}}>
@@ -42,9 +42,9 @@ const Sign_up = () => {
                 />
             </FormControl>
 
-            <FormControl sx={{display : "flex", justifyContent : "flex-start", alignItems : "center", gap : "1.3rem", flexDirection : "row"}}>
+            <FormControl sx={{display : "flex", justifyContent : "flex-start", alignItems : "center", gap : "1rem", flexDirection : "row"}}>
                 <CheckBox />
-                <Typography maxWidth={"290px"} variant='body1' lineHeight={1.5} component={'p'}>
+                <Typography maxWidth={"320px"} fontSize={"1rem"}  lineHeight={1.5} component={'p'}  fontStyle={"normal"} fontWeight={"400"} color={"rgba(0, 0, 0, 0.87)"} fontFamily={"Roboto, Helvetica, Arial, sans-serif"} textTransform={"capitalize"}>
                i want to receive inspiration, marketing promotions and updates via email.
                 </Typography>
             </FormControl>

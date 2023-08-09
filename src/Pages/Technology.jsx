@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Button, Stack } from '@mui/material';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
+import { Link } from 'react-router-dom';
 
 const Technology = () => {
   const [uploadedFile, setUploadedFile] = useState(null);
@@ -58,8 +59,16 @@ const Technology = () => {
           )}
         </Box>
       )}
+
+      <Box mt={"4rem"}> 
+      <Link to={"/"}>
+      back to home
+      </Link>
+      </Box>
       
     </Box>
+
+  
     </Stack>
   );
 };
