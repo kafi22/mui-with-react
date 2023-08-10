@@ -37,7 +37,7 @@ const Technology = () => {
       />
       </Box>
       {uploadedFile && (
-        <Box >
+        <Box borderRadius={"10px"} padding={"20px"} bgcolor={"#F8F0E5"} sx={{width : "60%"}}>
           {uploadedFile.type.includes('image') ? (
             <Box sx={{display : "flex", justifyContent : "flex-start", flexDirection : "column"}}>
               
